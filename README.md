@@ -136,8 +136,7 @@ This repository contains two distinct implementations of RL-based route optimiza
 ## **How to Run the Code**  
 1. Clone the repository:  
    ```bash
-   git clone <repository-link>
-   cd <repository-folder>
+   git clone https://github.com/shukla2alok/Reinforcement-Learning-Route-Optimization
    ```  
 
 2. Install dependencies:  
@@ -153,7 +152,7 @@ This repository contains two distinct implementations of RL-based route optimiza
    python route_optimization_v2.py
    ```  
 
-5. Open the generated map (`optimal_and_explored_paths_map.html` or `optimized_routes_map.html`) to view the results.  
+5. Open the generated map  `optimized_routes_map.html` to view the results.  
 
 ---
 
@@ -166,6 +165,5 @@ We hope this project inspires further exploration into RL and its vast potential
 
 (Add an **image** showing a high-level summary of RL and Q-learning applications for a strong conclusion.)
 
---- 
 
 Feel free to share this README with your project repository! Let me know if you'd like further tweaks.
