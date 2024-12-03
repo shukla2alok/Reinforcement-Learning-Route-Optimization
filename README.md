@@ -32,9 +32,9 @@ Reinforcement Learning is a branch of machine learning where agents learn to mak
 - Traffic light control systems  
 - Route optimization  
 
-(Add an **illustrative diagram of RL components (Agent, Environment, State, Action, Reward)** here for clarity.)
 
----
+![image](https://github.com/user-attachments/assets/21a978a3-483c-4919-ad92-80867eac4251)
+
 
 ## **Q-Learning in Detail**  
 Q-Learning is a model-free RL algorithm. It allows an agent to learn the optimal action-selection policy by updating a Q-table.  
@@ -47,22 +47,25 @@ Q-Learning is a model-free RL algorithm. It allows an agent to learn the optimal
 2. **Agent Interaction**:  
    - The agent explores the environment and selects an action based on an exploration-exploitation strategy (e.g., epsilon-greedy).  
 
-3. **Q-Value Update Rule**:  
-   \[
-   Q(s, a) = Q(s, a) + \alpha \left( r + \gamma \max Q(s', a') - Q(s, a) \right)
-   \]  
-   - \(Q(s, a)\): Current Q-value for state \(s\) and action \(a\).  
-   - \(\alpha\): Learning rate (controls how much new information overrides old).  
-   - \(r\): Immediate reward after action \(a\).  
-   - \(\gamma\): Discount factor (prioritizes immediate vs. future rewards).  
-   - \(\max Q(s', a')\): Maximum Q-value for the next state \(s'\).  
+
+3. **Q-Value Update Rule**  
+The Q-value update formula is:  
+
+```text
+Q(s, a) = Q(s, a) + α * [r + γ * max(Q(s', a')) - Q(s, a)]
+```  
+
+Where:  
+- `Q(s, a)`: Current Q-value for state `s` and action `a`.  
+- `α` (Alpha): Learning rate, controls how much new information overrides the old.  
+- `r`: Immediate reward received after taking action `a`.  
+- `γ` (Gamma): Discount factor, balances immediate vs. future rewards.  
+- `max(Q(s', a'))`: Maximum Q-value for the next state `s'` and all possible actions.  
 
 4. **Termination**:  
    - The algorithm ends when the Q-table converges (values stabilize).  
 
-(Add an **image/flowchart** showing Q-learning steps: initialization, interaction, update, and termination.)
-
----
+![image](https://github.com/user-attachments/assets/e4ea4e8f-e01e-484a-9b82-769d71073e19)
 
 ## **Project Structure**  
 This repository contains two distinct implementations of RL-based route optimization. Both use OpenRouteService for route generation and Q-learning for selecting the optimal path.  
@@ -75,9 +78,7 @@ This repository contains two distinct implementations of RL-based route optimiza
 - `route_optimization_v2.py`:  
   - Introduces variations in parameters, visualization, and exploration strategies.  
 
-(Add a **flowchart or high-level diagram** showing the workflow of both files: data input → route generation → RL training → map visualization.)
 
----
 
 ## **Files in Detail**  
 
