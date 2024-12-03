@@ -7,7 +7,7 @@ import random
 alpha = 0.1  # Learning rate
 gamma = 0.85  # Discount factor
 epsilon = 0.1  # Exploration rate
-episodes = 1000  # Number of training episodes
+episodes = 100  # Number of training episodes
 
 
 class RouteOptimizer:
