@@ -103,12 +103,6 @@ This repository contains two distinct implementations of RL-based route optimiza
    - Displays all paths (gray), explored paths (red), and the optimal path (blue).  
    - Saves the map as `optimal_and_explored_paths_map.html`.  
 
-(Add **images/screenshots** of:  
-1. The map showing routes.  
-2. Training logs or console outputs.)
-
----
-
 ### **2. route_optimization_v2.py**  
 #### Overview:  
 - A refined implementation of RL for route optimization.  
@@ -162,8 +156,3 @@ This project demonstrates the application of reinforcement learning for optimizi
 - Practical insights into RL's adaptability for dynamic problems.  
 
 We hope this project inspires further exploration into RL and its vast potential applications.  
-
-(Add an **image** showing a high-level summary of RL and Q-learning applications for a strong conclusion.)
-
-
-Feel free to share this README with your project repository! Let me know if you'd like further tweaks.
